@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+
+		<h1>Авторизация{{ a }}</h1>
+		<p>admin/admin - for EDIT tables</p>
+		<p>other - for Search Books or Authors</p>
+		<form  method = post>
+		<input class = "form-control" type = "text"     name = "login" placeholder = "Login">  
+		</br>
+		<input class = "form-control" type = "password" name = "pass" placeholder = "Password">
+      
+		</br>
+		<p> 
+		<input class="btn btn-lg btn-success" type="submit" value="Sign Up" >
+		</p>
+		</form>
+  
+{% endblock %}

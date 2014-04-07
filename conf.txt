@@ -1,0 +1,4 @@
+sqlite.exe
+.open prom.db
+.read create_tables.sql
+.read data.sql

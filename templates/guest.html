@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block name %}..........<b><i>{{ name }}</i></b>
+{% endblock %}
+{% block content %}
+
+<div id="test_tables">
+  <input class="search" placeholder="Search" />
+  </button>
+  
+<div class="panel panel-default"> 
+  <!-- Table -->
+  <table class="table table-hover"style= "text-align: left">
+			
+				<thead>
+					<tr>
+						<th>Author</th>
+						<th >Book</th>                 
+					</tr>
+				</thead>
+				
+				<tbody class = "list">
+					{% for lit in query %}
+					<tr>                  
+						<td class = "name">{{ lit.name }}</td>
+						<td class = "title">{{ lit.title }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+				
+	</table>
+			 
+</div>
+</div>
+<script type="text/javascript">
+var options = {
+  valueNames: [ 'name', 'title' ]
+};
+var userList = new List('test_tables', options);
+
+</script>
+{% endblock %}

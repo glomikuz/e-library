@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+   <head>
+    <title>E-libraryp</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/static/css/template_bootstrap(example).css" rel="stylesheet">
+	<link href="/static/css/list.css" rel="stylesheet">
+	<script src="static/js/list.js"></script>
+  </head>
+  
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/login">Login</a></li>
+          <li><a href="/guest">Guest</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+        <h3 class="text-muted">E-Library{% block name %} {% endblock %}</h3>
+      </div>
+
+      <div class="jumbotron">
+	  
+      {% block content %}
+      {% endblock %}
+		
+      </div>
+    
+
+    </div> <!-- /container -->
+
+
+    
+   </body>
+   
+</html>
